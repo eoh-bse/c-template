@@ -1,4 +1,4 @@
-# C++ CMake Starter Template
+# C CMake Starter Template
 This template includes the following:
 * Basic Dependencies
     * [Unity](https://github.com/ThrowTheSwitch/Unity)
