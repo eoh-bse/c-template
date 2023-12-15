@@ -45,7 +45,7 @@ install(TARGETS ${PROJECT_NAME} DESTINATION bin)
 
 function(add_test_suite TEST_SUITE_NAME)
 	file(GLOB TEST_FILES "${PROJECT_SOURCE_DIR}/tests/${TEST_SUITE_NAME}/*.c")
-	add_executable(${TEST_SUITE_NAME} ${TEST_FILES} ${MODULES} "${unity_SOURCE_DIR}/src/unity.c")
+	add_executable(${TEST_SUITE_NAME} ${TEST_FILES} ${MODULES})
 	target_include_directories(${TEST_SUITE_NAME} PRIVATE "${PROJECT_SOURCE_DIR}/include/")
 	target_link_libraries(${TEST_SUITE_NAME} PRIVATE unity)
 	add_dependencies(${TEST_SUITE_NAME} unity)
